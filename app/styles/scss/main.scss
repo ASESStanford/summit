@@ -1,0 +1,21 @@
+// Normalizes CSS
+@import 'base/normalize';
+@import 'base/typography';
+
+// Styling for reusable components like buttons
+
+// Global mixins and variables
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+// Contains layout styling
+@import 'layout/grid';
+@import 'layout/generic';
+@import 'layout/header';
+@import 'layout/footer';
+
+// Styling for individual pages
+@import 'pages/home';
+
+// Media queries for responsive design
+@import 'layout/media';
