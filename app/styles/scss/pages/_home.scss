@@ -1,3 +1,55 @@
-body {
-	
+#home {
+  header {
+    background: white;
+    padding: 2em 3em;
+    position: absolute; 
+    top: 0; 
+    width: 100%;
+    overflow: hidden;
+
+    #logo, nav {
+    }
+    #logo {
+      float: left;
+    }
+    nav {
+      overflow: hidden;
+      text-align: right; 
+
+      ul {
+        list-style: none; 
+
+        li {
+          display: inline-block;
+          padding: 0 1.5em;
+
+          a {
+            text-decoration: none; 
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    padding-top: 2em;
+    width: 40em;
+
+    .btn {
+      margin: 4em auto 0;
+      width: 10em; 
+    }
+    h2 {
+      border-bottom: 2px solid black; 
+      font-size: 2.25em; 
+      line-height: 1.5em;
+      padding: .7em 0; 
+      text-align: center;
+    }
+    h5 {
+      font-size: .9em; 
+      letter-spacing: .5em;
+      text-transform: uppercase;
+    }
+  }
 }

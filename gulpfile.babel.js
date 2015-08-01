@@ -10,7 +10,7 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 gulp.task('styles', () => {
-  return gulp.src('app/styles/scss/*.scss')
+  return gulp.src('app/styles/scss/**/*.scss')
              .pipe(sass())
              .pipe(gulp.dest('app/styles'))
              .pipe(browserSync.stream());
@@ -101,7 +101,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-  gulp.watch('app/styles/scss/*.scss', ['styles']);
+  gulp.watch('app/styles/scss/**/*.scss', ['styles']).on('change', reload);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });

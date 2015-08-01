@@ -1,12 +1,14 @@
 // Normalizes CSS
 @import 'base/normalize';
+@import 'base/fonts';
 @import 'base/typography';
-
-// Styling for reusable components like buttons
 
 // Global mixins and variables
 @import 'helpers/mixins';
 @import 'helpers/variables';
+
+// Styling for reusable components like buttons
+@import 'components/buttons';
 
 // Contains layout styling
 @import 'layout/grid';

@@ -1,6 +1,5 @@
 // typography
-$header-font: 'Karla', Helvetica, Arial, sans-serif; 
-$body-font: 'Halant', Georgia, Times, serif; 
+$body-font: 'Gotham', Georgia, Times, serif; 
 $emphasis-font: 'Sorts Mill Goudy', serif; 
 
 body {
@@ -8,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: $header-font; 
+  // font-family: $header-font; 
   font-weight: normal; 
   margin: 0; 
 }
