@@ -3,11 +3,32 @@ $body-font: 'Gotham', Georgia, Times, serif;
 $emphasis-font: 'Sorts Mill Goudy', serif; 
 
 body {
-  font-family: $body-font; 
+  font: 200 15px $body-font; 
+  // font-weight: 400;
 }
 
 h1, h2, h3, h4, h5 {
-  // font-family: $header-font; 
-  font-weight: normal; 
+  font-weight: 700; 
   margin: 0; 
+
+  .normal {
+    font-weight: normal;
+  }
+}
+
+h1 {
+  font-size: 5em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2.75em;
+  letter-spacing: -1.5px;
+}
+h4 {
+  font-size: 2em;
+}
+h5 {
+  font-size: 1.5em;
 }

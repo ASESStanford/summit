@@ -53,3 +53,70 @@
     }
   }
 }
+
+#unique {
+  color: $white;
+  line-height: 1.75em;
+
+  section {
+
+    .container {
+      margin-top: 6em; 
+      margin-bottom: 4em;
+      max-width: 80%;
+      width: 525px; 
+    }
+    h3 {
+      margin: 1em 0;
+    }
+    .icon {
+      display: block;
+      margin: 2.5em auto 2em;
+    }
+  }
+}
+
+#value-prop {
+  color: $primary;
+
+  .container {
+    max-width: 90%;
+    
+    h5 {
+      text-align: center;
+    }
+    .value {
+      line-height: 1.5em;
+      padding: 0 1.5em;
+    }
+  }
+}
+
+#details {
+  color: $primary; 
+  padding: 2.5em 0;
+
+  .container {
+    max-width: 90%;
+
+    h4, h5 {
+      margin-top: 1em;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .deadline-details {
+      margin-top: 3em;
+    }
+    .deadline p {
+      font-size: 1.5em;
+    }
+    .deadline-detail p {
+      font-size: 1.5em;
+    }
+    .deadline:first-child {
+      border-right: 7px solid $primary;
+    }
+  }
+}

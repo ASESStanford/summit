@@ -1,0 +1,32 @@
+.icon {
+  display: block; 
+
+  &.summit {
+    background: url('../images/icon_summit.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 70px;
+    width: 62px; 
+  }
+  &.calendar {
+    background: url('../images/icon_calendar.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 70px;
+    width: 62px; 
+  }
+  &.location {
+    background: url('../images/icon_location.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 70px;
+    width: 62px; 
+  }
+  &.people {
+    background: url('../images/icon_people_group.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 70px;
+    width: 80px; 
+  }
+}
