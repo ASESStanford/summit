@@ -4,6 +4,23 @@ a {
   }
 }
 
+aside {
+  background: $primary;
+  color: $white; 
+  padding: 5em 0 4em;
+
+  .container {
+    margin: 0 auto; 
+    max-width: 90%; 
+    text-align: center;
+
+    &.content {
+      line-height: 2em;
+      width: 500px;
+    }
+  }
+}
+
 section {
   display: table;
   width: 100%;
