@@ -388,6 +388,13 @@ th {
   font-weight: 100;
   font-style: normal; }
 
+/* Freight-Display Font Stylesheet */
+@font-face {
+  font-family: 'Freight';
+  src: url("../fonts/Freight-DispBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Freight-DispBold.otf") format("opentype"), url("../fonts/Freight-DispBold.woff") format("woff"), url("../fonts/Freight-DispBold.ttf") format("truetype"), url("../fonts/Freight-DispBold.svg#Freight-DispBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font: 200 15px "Gotham", Georgia, Times, serif; }
 
@@ -439,6 +446,24 @@ h5 {
     background-size: contain;
     height: 70px;
     width: 80px; }
+  .icon.email {
+    background: url("../images/icon_email.png") no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 60px;
+    width: 60px; }
+  .icon.twitter {
+    background: url("../images/icon_twitter.png") no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 60px;
+    width: 60px; }
+  .icon.facebook {
+    background: url("../images/icon_facebook.png") no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 60px;
+    width: 60px; }
 
 .btn {
   display: inline-block;
@@ -453,6 +478,57 @@ h5 {
   .btn.round {
     border-radius: 1.25em;
     padding: 0.5em 2em 0.3em; }
+
+/* Basic jQuery Slider essential styles */
+ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none; }
+
+li.bjqs-slide {
+  position: absolute;
+  display: none; }
+
+ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999; }
+
+ul.bjqs-controls.v-centered li a {
+  position: absolute; }
+
+ul.bjqs-controls.v-centered li.bjqs-next a {
+  right: 0; }
+
+ul.bjqs-controls.v-centered li.bjqs-prev a {
+  left: 0; }
+
+ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+ol.bjqs-markers.h-centered {
+  text-align: center; }
+
+ol.bjqs-markers li {
+  display: inline; }
+
+ol.bjqs-markers li a {
+  display: inline-block; }
+
+p.bjqs-caption {
+  display: block;
+  width: 96%;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  bottom: 0; }
 
 /*-----------------------------------*
   $TOAST-GRID
@@ -736,7 +812,18 @@ section {
 
 .bg.asphalt {
   background-image: url("../images/bg_asphalt.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 4em 2em 1em; }
+  footer .icon {
+    display: inline-block;
+    margin: 4em 0; }
+    footer .icon:not(:last-of-type) {
+      margin-right: 5em; }
 
 #home header {
   background: white;
@@ -790,6 +877,7 @@ section {
     margin: 2.5em auto 2em; }
 
 #value-prop {
+  background: url("../images/bg_value_prop.png");
   color: #233E75; }
   #value-prop .container {
     max-width: 90%; }
@@ -809,11 +897,152 @@ section {
       text-align: center; }
     #details .container p {
       text-align: center; }
+    #details .container.content {
+      margin-top: 5em; }
     #details .container .deadline-details {
-      margin-top: 3em; }
+      margin-top: 5em; }
     #details .container .deadline p {
       font-size: 1.5em; }
     #details .container .deadline-detail p {
       font-size: 1.5em; }
     #details .container .deadline:first-child {
-      border-right: 7px solid #233E75; }
+      border-right: 3.5px solid #233E75; }
+    #details .container .deadline:last-child {
+      border-left: 3.5px solid #233E75; }
+
+.slideshow {
+  background: black;
+  color: #fff; }
+  .slideshow ul.bjqs-controls .bjqs-prev a {
+    background: url("../images/icon_arrow.png") no-repeat;
+    background-size: contain;
+    background-position: center right;
+    top: 40%;
+    height: 6em;
+    width: 4em;
+    left: 2em !important;
+    text-indent: -100000px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .slideshow ul.bjqs-controls .bjqs-next a {
+    background: url("../images/icon_arrow.png") no-repeat;
+    background-size: contain;
+    background-position: center right;
+    top: 40%;
+    height: 6em;
+    width: 4em;
+    right: 2em !important;
+    text-indent: -100000px; }
+  .slideshow li > div {
+    display: table;
+    height: 100vh;
+    width: 100%; }
+    .slideshow li > div > div {
+      display: table-cell;
+      vertical-align: middle; }
+
+#speakers li#ng {
+  background: url("../images/speaker_andrew_ng.jpg") no-repeat;
+  background-size: cover; }
+
+#speakers li#musk {
+  background: url("../images/speaker_elon_musk.jpg") no-repeat;
+  background-size: cover; }
+
+#speakers li#thiel {
+  background: url("../images/speaker_peter_thiel.jpg") no-repeat;
+  background-size: cover; }
+
+#speakers li .content {
+  font: 2.5em "Freight", serif;
+  line-height: 1.5em;
+  margin: 0 auto;
+  max-width: 80%;
+  padding-top: 100px;
+  position: relative;
+  width: 500px; }
+  #speakers li .content:before {
+    background: url("../images/icon_quote.png") no-repeat;
+    background-size: contain;
+    content: '';
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 225px; }
+  #speakers li .content .author, #speakers li .content .title {
+    display: block;
+    font: 0.4em "Gotham", Georgia, Times, serif;
+    text-align: right; }
+  #speakers li .content .author {
+    font-weight: 700;
+    margin: 3em 0 0.5em; }
+    #speakers li .content .author:before {
+      content: '- '; }
+
+#activities li#learn {
+  background: url("../images/hero_learn_stuff.jpg") no-repeat;
+  background-size: cover; }
+
+#activities li#make {
+  background: url("../images/hero_make_stuff.jpg") no-repeat;
+  background-size: cover; }
+
+#activities li#pitch {
+  background: url("../images/hero_pitch_stuff.jpg") no-repeat;
+  background-size: cover; }
+
+#activities li#hear {
+  background: url("../images/hero_hear_stuff.jpg") no-repeat;
+  background-size: cover; }
+
+#activities li#selfie {
+  background: url("../images/hero_selfie.jpg") no-repeat;
+  background-size: cover; }
+
+#activities li .content {
+  font-size: 2em;
+  margin: 0 auto;
+  max-width: 80%;
+  position: relative;
+  text-align: center;
+  width: 600px; }
+  #activities li .content .author, #activities li .content .title {
+    display: block;
+    font: 0.4em "Gotham", Georgia, Times, serif;
+    text-align: right; }
+  #activities li .content .author {
+    font-weight: 700;
+    margin: 3em 0 0.5em; }
+    #activities li .content .author:before {
+      content: '- '; }
+
+#testimonials {
+  color: #233E75; }
+  #testimonials .grid {
+    margin-top: 2em; }
+  #testimonials .container.header {
+    font: 200 1.25em "Gotham", Georgia, Times, serif;
+    max-width: 80%;
+    text-align: center;
+    width: 600px; }
+    #testimonials .container.header h3 {
+      font-size: 2em;
+      margin-bottom: .75em; }
+
+#closing {
+  background: url("../images/hero_closing.jpg") no-repeat;
+  background-size: cover; }
+  #closing .container {
+    font-size: 1.5em;
+    max-width: 80%;
+    text-align: center; }
+    #closing .container .btn {
+      font-size: .7em;
+      margin: 4em auto 0;
+      width: 10em; }
+    #closing .container h1 {
+      font-size: 3.5em; }

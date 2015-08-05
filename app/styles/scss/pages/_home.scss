@@ -77,6 +77,7 @@
 }
 
 #value-prop {
+  background: url('../images/bg_value_prop.png');
   color: $primary;
 
   .container {
@@ -106,8 +107,11 @@
     p {
       text-align: center;
     }
+    &.content {
+      margin-top: 5em;
+    }
     .deadline-details {
-      margin-top: 3em;
+      margin-top: 5em;
     }
     .deadline p {
       font-size: 1.5em;
@@ -116,7 +120,195 @@
       font-size: 1.5em;
     }
     .deadline:first-child {
-      border-right: 7px solid $primary;
+      border-right: 3.5px solid $primary;
+    }
+    .deadline:last-child {
+      border-left: 3.5px solid $primary;
+    }
+  }
+}
+
+.slideshow {
+  background: black;
+  color: $white; 
+
+  ul.bjqs-controls {
+    .bjqs-prev a {
+      background: url('../images/icon_arrow.png') no-repeat; 
+      background-size: contain; 
+      background-position: center right;
+      top: 40%;
+      height: 6em;
+      width: 4em;
+      left: 2em !important;
+      text-indent: -100000px;
+
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .bjqs-next a {
+      background: url('../images/icon_arrow.png') no-repeat; 
+      background-size: contain; 
+      background-position: center right;
+      top: 40%;
+      height: 6em;
+      width: 4em;
+      right: 2em !important;
+      text-indent: -100000px;
+    }
+  }
+
+  li {    
+    & > div {
+      display: table; 
+      height: 100vh;
+      width: 100%;
+
+      & > div {
+        display: table-cell; 
+        vertical-align: middle;
+      }
+    }
+  }
+
+}
+
+#speakers {
+  li {
+    &#ng {
+      background: url('../images/speaker_andrew_ng.jpg') no-repeat;
+      background-size: cover;
+    }
+    &#musk {
+      background: url('../images/speaker_elon_musk.jpg') no-repeat;
+      background-size: cover;
+    }
+    &#thiel {
+      background: url('../images/speaker_peter_thiel.jpg') no-repeat;
+      background-size: cover;
+    }
+
+   .content {
+      font: 2.5em $emphasis-font;
+      line-height: 1.5em;
+      margin: 0 auto;
+      max-width: 80%; 
+      padding-top: 100px;
+      position: relative;
+      width: 500px;
+
+      &:before {
+        background: url('../images/icon_quote.png') no-repeat; 
+        background-size: contain;
+        content: '';
+        width: 75px; 
+        height: 75px; 
+        position: absolute; 
+        top: 0;
+        left: 225px;
+      }
+      .author, .title {
+        display: block; 
+        font: .4em $body-font;
+        text-align: right;
+      }
+      .author {
+        font-weight: 700;
+        margin: 3em 0 .5em;
+        &:before {
+          content: '- ';
+        }
+      }
+    }
+  }
+}
+
+#activities {
+  li {
+    &#learn {
+      background: url('../images/hero_learn_stuff.jpg') no-repeat;
+      background-size: cover;
+    }
+    &#make {
+      background: url('../images/hero_make_stuff.jpg') no-repeat;
+      background-size: cover;
+    }
+    &#pitch {
+      background: url('../images/hero_pitch_stuff.jpg') no-repeat;
+      background-size: cover;
+    }
+    &#hear {
+      background: url('../images/hero_hear_stuff.jpg') no-repeat;
+      background-size: cover;
+    }
+    &#selfie {
+      background: url('../images/hero_selfie.jpg') no-repeat;
+      background-size: cover;
+    }
+
+   .content {
+      font-size: 2em;
+      margin: 0 auto;
+      max-width: 80%; 
+      position: relative;
+      text-align: center;
+      width: 600px;
+
+      .author, .title {
+        display: block; 
+        font: .4em $body-font;
+        text-align: right;
+      }
+      .author {
+        font-weight: 700;
+        margin: 3em 0 .5em;
+        &:before {
+          content: '- ';
+        }
+      }
+    }
+  }
+}
+
+#testimonials {
+  color: $primary; 
+
+  .grid {
+    margin-top: 2em;
+  }
+
+  .container.header {
+    font: 200 1.25em $body-font; 
+    max-width: 80%;
+    text-align: center;
+    width: 600px;
+
+    h3 {
+      font-size: 2em;
+      margin-bottom: .75em;
+    }
+  }
+}
+
+#closing {
+  background: url('../images/hero_closing.jpg') no-repeat; 
+  background-size: cover; 
+  
+  .container {
+    font-size: 1.5em;
+    max-width: 80%; 
+    text-align: center;
+    
+    .btn {
+      font-size: .7em;
+      margin: 4em auto 0;
+      width: 10em; 
+    }
+    h1 {
+      font-size: 3.5em;
     }
   }
 }

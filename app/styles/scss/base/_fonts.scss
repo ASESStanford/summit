@@ -39,3 +39,12 @@
   font-weight: 100;
   font-style: normal;
 }
+
+/* Freight-Display Font Stylesheet */
+@font-face {
+  font-family: 'Freight';
+  src: url('../fonts/Freight-DispBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Freight-DispBold.otf')  format('opentype'),
+       url('../fonts/Freight-DispBold.woff') format('woff'), url('../fonts/Freight-DispBold.ttf')  format('truetype'), url('../fonts/Freight-DispBold.svg#Freight-DispBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

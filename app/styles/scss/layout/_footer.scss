@@ -1,0 +1,14 @@
+footer {
+  color: $white; 
+  text-align: center; 
+  padding: 4em 2em 1em;
+
+  .icon {
+    display: inline-block;
+    margin: 4em 0;
+
+    &:not(:last-of-type) {
+      margin-right: 5em;
+    }
+  }
+}

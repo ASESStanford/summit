@@ -29,4 +29,25 @@
     height: 70px;
     width: 80px; 
   }
+  &.email {
+    background: url('../images/icon_email.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 60px;
+    width: 60px; 
+  }
+  &.twitter {
+    background: url('../images/icon_twitter.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 60px;
+    width: 60px; 
+  }
+  &.facebook {
+    background: url('../images/icon_facebook.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 60px;
+    width: 60px; 
+  }
 }
