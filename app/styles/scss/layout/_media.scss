@@ -1,0 +1,73 @@
+@media screen and (max-width: $mobile-breakpoint) {
+  #home section {
+    .container {
+      font-size: .9em;
+      width: 70%;
+      .btn {
+        font-size: 1.5em;
+        margin-top: 1.5em;
+      }
+      h5 {
+        margin: 0 auto;
+        width: 50%;
+        span:before, span:after {
+          top: 50%;
+        }
+      }
+    }
+  }
+  #unique section {
+    .container {
+      width: 80%;
+    }
+  }
+  #testimonials section {
+    .container, .container.header {
+      width: 90%;
+
+      img {
+        display: block; 
+        margin: 1em auto 2em;
+        width: 40%;
+      }
+    }
+  }
+  #details section {
+    padding-top: 2em; 
+
+    .container {
+      margin-top: 0;
+
+      .deadline:first-child, .deadline:last-child {
+        border-right: 0px;
+        border-left: 0px;
+      }
+      .deadline, .deadline-detail {
+        position: relative; 
+        padding-bottom: 4em;
+        &:after {
+          content: '';
+          background-color: $primary; 
+          width: 70%; 
+          height: .5em;
+          position: absolute; 
+          bottom: 2em;
+          left: 15%;
+        }
+        &:last-of-type {
+          padding-bottom: 0; 
+          
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .deadline-details {
+        margin-top: 0;
+        .deadline-detail {
+          padding-top: 2em;
+        } 
+      }
+    }
+  }
+}

@@ -304,6 +304,7 @@
   .container {
     margin-top: 3em; 
     margin-bottom: 3em;
+    max-width: 90%;
 
     &.header {
       font: 200 1.25em $body-font; 

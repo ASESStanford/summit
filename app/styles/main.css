@@ -790,8 +790,6 @@ section {
     vertical-align: middle; }
     section > section .container {
       margin: 0 auto; }
-      section > section .container.content {
-        width: 850px; }
       section > section .container.header {
         font-weight: 600;
         margin-bottom: 3em;
@@ -1062,7 +1060,8 @@ footer {
     margin-top: 0; }
   #testimonials .container {
     margin-top: 3em;
-    margin-bottom: 3em; }
+    margin-bottom: 3em;
+    max-width: 90%; }
     #testimonials .container.header {
       font: 200 1.25em "Gotham", Georgia, Times, serif;
       max-width: 80%;
@@ -1086,3 +1085,50 @@ footer {
       width: 10em; }
     #closing .container h1 {
       font-size: 3.5em; }
+
+@media screen and (max-width: 800px) {
+  #home section .container {
+    font-size: .9em;
+    width: 70%; }
+    #home section .container .btn {
+      font-size: 1.5em;
+      margin-top: 1.5em; }
+    #home section .container h5 {
+      margin: 0 auto;
+      width: 50%; }
+      #home section .container h5 span:before, #home section .container h5 span:after {
+        top: 50%; }
+  #unique section .container {
+    width: 80%; }
+  #testimonials section .container, #testimonials section .container.header {
+    width: 90%; }
+    #testimonials section .container img, #testimonials section .container.header img {
+      display: block;
+      margin: 1em auto 2em;
+      width: 40%; }
+  #details section {
+    padding-top: 2em; }
+    #details section .container {
+      margin-top: 0; }
+      #details section .container .deadline:first-child, #details section .container .deadline:last-child {
+        border-right: 0px;
+        border-left: 0px; }
+      #details section .container .deadline, #details section .container .deadline-detail {
+        position: relative;
+        padding-bottom: 4em; }
+        #details section .container .deadline:after, #details section .container .deadline-detail:after {
+          content: '';
+          background-color: #233E75;
+          width: 70%;
+          height: .5em;
+          position: absolute;
+          bottom: 2em;
+          left: 15%; }
+        #details section .container .deadline:last-of-type, #details section .container .deadline-detail:last-of-type {
+          padding-bottom: 0; }
+          #details section .container .deadline:last-of-type:after, #details section .container .deadline-detail:last-of-type:after {
+            display: none; }
+      #details section .container .deadline-details {
+        margin-top: 0; }
+        #details section .container .deadline-details .deadline-detail {
+          padding-top: 2em; } }
