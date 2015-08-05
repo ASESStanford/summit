@@ -3,12 +3,13 @@ footer {
   text-align: center; 
   padding: 4em 2em 1em;
 
+
+  a:not(:last-of-type) {
+    margin-right: 5em;
+  }
+  
   .icon {
     display: inline-block;
     margin: 4em 0;
-
-    &:not(:last-of-type) {
-      margin-right: 5em;
-    }
   }
 }

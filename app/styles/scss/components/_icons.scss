@@ -1,6 +1,27 @@
 .icon {
   display: block; 
 
+  &.design-thinking {
+    background: url('../images/icon_d_thinking.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 80px;
+    width: 72px;  
+  }
+  &.wicked-problems {
+    background: url('../images/icon_wicked_problems.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 80px;
+    width: 72px;  
+  }
+  &.global-network {
+    background: url('../images/icon_global_network.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 80px;
+    width: 72px;  
+  }
   &.summit {
     background: url('../images/icon_summit.png') no-repeat; 
     background-position: center center;

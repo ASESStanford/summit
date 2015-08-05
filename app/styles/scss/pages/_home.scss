@@ -1,6 +1,9 @@
 #home {
+  background: url('../images/hero_landing_page.jpg') no-repeat; 
+  background-size: cover; 
+  background-position: top center;
+
   header {
-    background: white;
     padding: 2em 3em;
     position: absolute; 
     top: 0; 
@@ -24,6 +27,7 @@
           padding: 0 1.5em;
 
           a {
+            color: $white;
             text-decoration: none; 
           }
         }
@@ -32,6 +36,7 @@
   }
 
   .container {
+    color: $white; 
     padding-top: 2em;
     width: 40em;
 
@@ -40,7 +45,7 @@
       width: 10em; 
     }
     h2 {
-      border-bottom: 2px solid black; 
+      border-bottom: 2px solid $white; 
       font-size: 2.25em; 
       line-height: 1.5em;
       padding: .7em 0; 
@@ -81,8 +86,13 @@
   color: $primary;
 
   .container {
+    margin-top: 3em; 
+    margin-bottom: 3em;
     max-width: 90%;
     
+    .icon {
+      margin: 0 auto 1.5em;
+    }
     h5 {
       text-align: center;
     }
@@ -98,6 +108,8 @@
   padding: 2.5em 0;
 
   .container {
+    margin-top: 3em; 
+    margin-bottom: 2em;
     max-width: 90%;
 
     h4, h5 {
@@ -236,6 +248,10 @@
       background: url('../images/hero_make_stuff.jpg') no-repeat;
       background-size: cover;
     }
+    &#eat {
+      background: url('../images/hero_eat_stuff.jpg') no-repeat;
+      background-size: cover;
+    }
     &#pitch {
       background: url('../images/hero_pitch_stuff.jpg') no-repeat;
       background-size: cover;
@@ -279,16 +295,26 @@
   .grid {
     margin-top: 2em;
   }
+  img {
+    width: 100%;
+  }
+  p {
+    margin-top: 0;
+  }
+  .container {
+    margin-top: 3em; 
+    margin-bottom: 3em;
 
-  .container.header {
-    font: 200 1.25em $body-font; 
-    max-width: 80%;
-    text-align: center;
-    width: 600px;
+    &.header {
+      font: 200 1.25em $body-font; 
+      max-width: 80%;
+      text-align: center;
+      width: 600px;
 
-    h3 {
-      font-size: 2em;
-      margin-bottom: .75em;
+      h3 {
+        font-size: 2em;
+        margin-bottom: .75em;
+      }
     }
   }
 }
@@ -296,7 +322,8 @@
 #closing {
   background: url('../images/hero_closing.jpg') no-repeat; 
   background-size: cover; 
-  
+  color: $white;
+
   .container {
     font-size: 1.5em;
     max-width: 80%; 
