@@ -422,6 +422,12 @@ h5 {
 
 .icon {
   display: block; }
+  .icon.hamburger {
+    background: url("../images/icon_hamburger_menu.png") no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 30px;
+    width: 30px; }
   .icon.design-thinking {
     background: url("../images/icon_d_thinking.png") no-repeat;
     background-position: center center;
@@ -962,34 +968,39 @@ footer {
     width: 4em;
     right: 2em !important;
     text-indent: -100000px; }
-  .slideshow li > div {
-    display: table;
-    height: 100vh;
-    width: 100%; }
-    .slideshow li > div > div {
-      display: table-cell;
-      vertical-align: middle; }
+  .slideshow li {
+    background-position: center center; }
+    .slideshow li > div {
+      display: table;
+      height: 100vh;
+      width: 100%; }
+      .slideshow li > div > div {
+        display: table-cell;
+        vertical-align: middle; }
 
 #speakers li#ng {
   background: url("../images/speaker_andrew_ng.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #speakers li#musk {
   background: url("../images/speaker_elon_musk.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #speakers li#thiel {
   background: url("../images/speaker_peter_thiel.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #speakers li .content {
   font: 2.5em "Freight", serif;
   line-height: 1.5em;
   margin: 0 auto;
+  width: 500px;
   max-width: 80%;
   padding-top: 100px;
-  position: relative;
-  width: 500px; }
+  position: relative; }
   #speakers li .content:before {
     background: url("../images/icon_quote.png") no-repeat;
     background-size: contain;
@@ -1011,27 +1022,33 @@ footer {
 
 #activities li#learn {
   background: url("../images/hero_learn_stuff.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #activities li#make {
   background: url("../images/hero_make_stuff.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #activities li#eat {
   background: url("../images/hero_eat_stuff.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #activities li#pitch {
   background: url("../images/hero_pitch_stuff.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #activities li#hear {
   background: url("../images/hero_hear_stuff.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #activities li#selfie {
   background: url("../images/hero_selfie.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 #activities li .content {
   font-size: 2em;
@@ -1086,26 +1103,73 @@ footer {
     #closing .container h1 {
       font-size: 3.5em; }
 
+@media screen and (min-width: 800px) {
+  .mobile {
+    display: none; }
+  nav {
+    display: block; } }
+
 @media screen and (max-width: 800px) {
+  .mobile {
+    display: block; }
+  #home section header {
+    margin-left: 0;
+    overflow: inherit; }
+  #home section .mobile {
+    position: absolute;
+    top: 2em;
+    right: 2em; }
+  #home section nav {
+    display: none;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 5em;
+    width: 100%;
+    padding-right: 10%;
+    left: 0;
+    z-index: 3; }
+    #home section nav ul li {
+      display: block;
+      text-align: center;
+      padding: 1em 0;
+      width: 100%; }
+      #home section nav ul li a {
+        color: #233E75; }
+      #home section nav ul li:not(:last-of-type) {
+        border-bottom: 1px solid #233E75; }
   #home section .container {
     font-size: .9em;
-    width: 70%; }
+    width: 85%; }
     #home section .container .btn {
       font-size: 1.5em;
       margin-top: 1.5em; }
     #home section .container h5 {
+      font-size: .75em;
+      line-height: 1.75em;
       margin: 0 auto;
-      width: 50%; }
+      width: 60%; }
       #home section .container h5 span:before, #home section .container h5 span:after {
-        top: 50%; }
+        width: 30%;
+        top: 25%; }
   #unique section .container {
     width: 80%; }
+    #unique section .container h3 {
+      line-height: 1.25em;
+      text-align: center; }
   #testimonials section .container, #testimonials section .container.header {
     width: 90%; }
     #testimonials section .container img, #testimonials section .container.header img {
       display: block;
       margin: 1em auto 2em;
       width: 40%; }
+  .slideshow#speakers li .content, .slideshow#activities li .content {
+    font-size: 1.6em;
+    max-width: 60%;
+    width: auto; }
+    .slideshow#speakers li .content:before, .slideshow#activities li .content:before {
+      left: 38%; }
+  #closing section .container h1 {
+    font-size: 2em; }
   #details section {
     padding-top: 2em; }
     #details section .container {

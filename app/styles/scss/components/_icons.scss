@@ -1,6 +1,13 @@
 .icon {
   display: block; 
 
+  &.hamburger {
+    background: url('../images/icon_hamburger_menu.png') no-repeat; 
+    background-position: center center;
+    background-size: contain; 
+    height: 30px;
+    width: 30px;  
+  }
   &.design-thinking {
     background: url('../images/icon_d_thinking.png') no-repeat; 
     background-position: center center;

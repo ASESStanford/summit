@@ -173,7 +173,9 @@
     }
   }
 
-  li {    
+  li {   
+    background-position: center center; 
+    
     & > div {
       display: table; 
       height: 100vh;
@@ -193,24 +195,27 @@
     &#ng {
       background: url('../images/speaker_andrew_ng.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
     &#musk {
       background: url('../images/speaker_elon_musk.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
     &#thiel {
       background: url('../images/speaker_peter_thiel.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
 
    .content {
       font: 2.5em $emphasis-font;
       line-height: 1.5em;
       margin: 0 auto;
+      width: 500px;
       max-width: 80%; 
       padding-top: 100px;
       position: relative;
-      width: 500px;
 
       &:before {
         background: url('../images/icon_quote.png') no-repeat; 
@@ -243,26 +248,32 @@
     &#learn {
       background: url('../images/hero_learn_stuff.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
     &#make {
       background: url('../images/hero_make_stuff.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
     &#eat {
       background: url('../images/hero_eat_stuff.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
     &#pitch {
       background: url('../images/hero_pitch_stuff.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
     &#hear {
       background: url('../images/hero_hear_stuff.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
     &#selfie {
       background: url('../images/hero_selfie.jpg') no-repeat;
       background-size: cover;
+      background-position: center center;
     }
 
    .content {

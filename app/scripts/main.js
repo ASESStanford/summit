@@ -25,6 +25,9 @@ $(document).ready(function($) {
 
   $(window).resize(function() {
     var width = $(window).width();
+    if (width > 800) {
+      $('header nav').css('display', 'inline-block');
+    }
     $('.slideshow').each(function() {
       var numSlides = $(this).find('li').length; 
       $(this).css('max-width', width + 'px');
@@ -37,6 +40,11 @@ $(document).ready(function($) {
       $(this).find('ul li').css('width', width + 'px');
     });    
   });
+
+  $('header a#mobile-nav-toggle').on('click', function() {
+    var nav = $(this).siblings('nav')
+    nav.css('display', nav.css('display') == 'none' ? 'inline-block' : 'none'); 
+  }); 
   
 });
 

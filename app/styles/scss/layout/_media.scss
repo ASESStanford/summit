@@ -1,17 +1,62 @@
+@media screen and (min-width: $mobile-breakpoint) {
+  .mobile {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+}
 @media screen and (max-width: $mobile-breakpoint) {
+  .mobile {
+    display: block;
+  }
   #home section {
+    header {
+      margin-left: 0;
+      overflow: inherit; 
+    }
+    .mobile {
+      position: absolute; 
+      top: 2em; 
+      right: 2em;
+    }
+    nav {
+      display: none;
+      background: rgba(255, 255, 255, 0.95);
+      position: absolute; 
+      top: 5em; 
+      width: 100%;
+      padding-right: 10%;
+      left: 0;
+      z-index: 3;
+      ul li {
+        display: block;
+        text-align: center;
+        padding: 1em 0;
+        width: 100%;
+        a {
+          color: $primary;
+        }
+        &:not(:last-of-type) {
+          border-bottom: 1px solid $primary;
+        }
+      }
+    }
     .container {
       font-size: .9em;
-      width: 70%;
+      width: 85%;
       .btn {
         font-size: 1.5em;
         margin-top: 1.5em;
       }
       h5 {
+        font-size: .75em;
+        line-height: 1.75em;
         margin: 0 auto;
-        width: 50%;
+        width: 60%;
         span:before, span:after {
-          top: 50%;
+          width: 30%;
+          top: 25%;
         }
       }
     }
@@ -19,6 +64,10 @@
   #unique section {
     .container {
       width: 80%;
+      h3 {
+        line-height: 1.25em;
+        text-align: center;
+      }
     }
   }
   #testimonials section {
@@ -30,6 +79,21 @@
         margin: 1em auto 2em;
         width: 40%;
       }
+    }
+  }
+  .slideshow#speakers, .slideshow#activities {
+    li .content {
+      font-size: 1.6em;
+      max-width: 60%;
+      width: auto;
+      &:before {
+        left: 38%;
+      }
+    }
+  }
+  #closing section {
+    .container h1 {
+      font-size: 2em;
     }
   }
   #details section {
