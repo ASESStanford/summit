@@ -13,6 +13,7 @@ gulp.task('styles', () => {
   return gulp.src('app/styles/scss/**/*.scss')
              .pipe(sass())
              .pipe(gulp.dest('app/styles'))
+             .pipe(gulp.dest('dist/styles'))
              .pipe(browserSync.stream());
 });
 
@@ -144,7 +145,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

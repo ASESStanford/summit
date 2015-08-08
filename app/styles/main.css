@@ -789,7 +789,8 @@ section {
   display: table;
   width: 100%; }
   section.full-height {
-    min-height: 100vh; }
+    min-height: 100vh;
+    height: 100vh; }
   section > section {
     display: table-cell;
     margin: 0 auto;
@@ -920,26 +921,26 @@ footer {
 #details {
   color: #233E75;
   padding: 2.5em 0; }
-  #details .container {
+  #details section > .container {
     margin-top: 3em;
     margin-bottom: 2em;
     max-width: 90%; }
-    #details .container h4, #details .container h5 {
+    #details section > .container h4, #details section > .container h5 {
       margin-top: 1em;
       text-align: center; }
-    #details .container p {
+    #details section > .container p {
       text-align: center; }
-    #details .container.content {
+    #details section > .container.content {
       margin-top: 5em; }
-    #details .container .deadline-details {
+    #details section > .container .deadline-details {
       margin-top: 5em; }
-    #details .container .deadline p {
+    #details section > .container .deadline p {
       font-size: 1.5em; }
-    #details .container .deadline-detail p {
+    #details section > .container .deadline-detail p {
       font-size: 1.5em; }
-    #details .container .deadline:first-child {
+    #details section > .container .deadline:first-child {
       border-right: 3.5px solid #233E75; }
-    #details .container .deadline:last-child {
+    #details section > .container .deadline:last-child {
       border-left: 3.5px solid #233E75; }
 
 .slideshow {
@@ -1106,12 +1107,24 @@ footer {
 @media screen and (min-width: 800px) {
   .mobile {
     display: none; }
+  .desktop {
+    display: block; }
   nav {
     display: block; } }
 
 @media screen and (max-width: 800px) {
   .mobile {
     display: block; }
+  .desktop {
+    display: none; }
+  footer a .icon {
+    margin: 2em 0; }
+  footer a:not(:last-of-type) {
+    margin-right: 1em; }
+  #value-prop section .container {
+    width: 100%; }
+  #details section .container {
+    width: 100%; }
   #home section header {
     margin-left: 0;
     overflow: inherit; }

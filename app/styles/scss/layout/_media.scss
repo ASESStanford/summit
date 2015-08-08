@@ -2,6 +2,9 @@
   .mobile {
     display: none;
   }
+  .desktop {
+    display: block; 
+  }
   nav {
     display: block;
   }
@@ -9,6 +12,27 @@
 @media screen and (max-width: $mobile-breakpoint) {
   .mobile {
     display: block;
+  }
+  .desktop {
+    display: none; 
+  }
+  footer {
+    a .icon {
+      margin: 2em 0;
+    }
+    a:not(:last-of-type) {
+      margin-right: 1em; 
+    }
+  }
+  #value-prop section {
+    .container {
+      width: 100%; 
+    }
+  }
+  #details section {
+    .container {
+      width: 100%; 
+    }
   }
   #home section {
     header {
