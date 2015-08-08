@@ -848,105 +848,105 @@ footer {
     display: inline-block;
     margin: 4em 0; }
 
-#home {
+#homepage #home {
   background: url("../images/hero_landing_page.jpg") no-repeat;
   background-size: cover;
   background-position: top center; }
-  #home header {
+  #homepage #home header {
     padding: 2em 3em;
     position: absolute;
     top: 0;
     width: 100%;
     overflow: hidden; }
-    #home header #logo {
+    #homepage #home header #logo {
       float: left; }
-    #home header nav {
+    #homepage #home header nav {
       overflow: hidden;
       text-align: right; }
-      #home header nav ul {
+      #homepage #home header nav ul {
         list-style: none; }
-        #home header nav ul li {
+        #homepage #home header nav ul li {
           display: inline-block;
           padding: 0 1.5em; }
-          #home header nav ul li a {
+          #homepage #home header nav ul li a {
             color: #fff;
             text-decoration: none; }
-  #home .container {
+  #homepage #home .container {
     color: #fff;
     padding-top: 2em;
     width: 40em; }
-    #home .container .btn {
+    #homepage #home .container .btn {
       margin: 4em auto 0;
       width: 10em; }
-    #home .container h2 {
+    #homepage #home .container h2 {
       border-bottom: 2px solid #fff;
       font-size: 2.25em;
       line-height: 1.5em;
       padding: .7em 0;
       text-align: center; }
-    #home .container h5 {
+    #homepage #home .container h5 {
       font-size: .9em;
       letter-spacing: .5em;
       text-transform: uppercase; }
 
-#unique {
+#homepage #unique {
   color: #fff;
   line-height: 1.75em; }
-  #unique section .container {
+  #homepage #unique section .container {
     margin-top: 6em;
     margin-bottom: 4em;
     max-width: 80%;
     width: 525px; }
-  #unique section h3 {
+  #homepage #unique section h3 {
     margin: 1em 0; }
-  #unique section .icon {
+  #homepage #unique section .icon {
     display: block;
     margin: 2.5em auto 2em; }
 
-#value-prop {
+#homepage #value-prop {
   background: url("../images/bg_value_prop.png");
   color: #233E75; }
-  #value-prop .container {
+  #homepage #value-prop .container {
     margin-top: 3em;
     margin-bottom: 3em;
     max-width: 90%; }
-    #value-prop .container .icon {
+    #homepage #value-prop .container .icon {
       margin: 0 auto 1.5em; }
-    #value-prop .container h5 {
+    #homepage #value-prop .container h5 {
       text-align: center; }
-    #value-prop .container .value {
+    #homepage #value-prop .container .value {
       line-height: 1.5em;
       padding: 0 1.5em; }
 
-#details {
+#homepage #details {
   color: #233E75;
   padding: 2.5em 0; }
-  #details section > .container {
+  #homepage #details section > .container {
     margin-top: 3em;
     margin-bottom: 2em;
     max-width: 90%; }
-    #details section > .container h4, #details section > .container h5 {
+    #homepage #details section > .container h4, #homepage #details section > .container h5 {
       margin-top: 1em;
       text-align: center; }
-    #details section > .container p {
+    #homepage #details section > .container p {
       text-align: center; }
-    #details section > .container.content {
+    #homepage #details section > .container.content {
       margin-top: 5em; }
-    #details section > .container .deadline-details {
+    #homepage #details section > .container .deadline-details {
       margin-top: 5em; }
-    #details section > .container .deadline p {
+    #homepage #details section > .container .deadline p {
       font-size: 1.5em; }
-    #details section > .container .deadline-detail p {
+    #homepage #details section > .container .deadline-detail p {
       font-size: 1.5em; }
-    #details section > .container .deadline:first-child {
+    #homepage #details section > .container .deadline:first-child {
       border-right: 3.5px solid #233E75; }
-    #details section > .container .deadline:last-child {
+    #homepage #details section > .container .deadline:last-child {
       border-left: 3.5px solid #233E75; }
 
-.slideshow {
+#homepage .slideshow {
   background: black;
   color: #fff; }
-  .slideshow ul.bjqs-controls .bjqs-prev a {
+  #homepage .slideshow ul.bjqs-controls .bjqs-prev a {
     background: url("../images/icon_arrow.png") no-repeat;
     background-size: contain;
     background-position: center right;
@@ -960,7 +960,7 @@ footer {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg); }
-  .slideshow ul.bjqs-controls .bjqs-next a {
+  #homepage .slideshow ul.bjqs-controls .bjqs-next a {
     background: url("../images/icon_arrow.png") no-repeat;
     background-size: contain;
     background-position: center right;
@@ -969,32 +969,32 @@ footer {
     width: 4em;
     right: 2em !important;
     text-indent: -100000px; }
-  .slideshow li {
+  #homepage .slideshow li {
     background-position: center center; }
-    .slideshow li > div {
+    #homepage .slideshow li > div {
       display: table;
       height: 100vh;
       width: 100%; }
-      .slideshow li > div > div {
+      #homepage .slideshow li > div > div {
         display: table-cell;
         vertical-align: middle; }
 
-#speakers li#ng {
+#homepage #speakers li#ng {
   background: url("../images/speaker_andrew_ng.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#speakers li#musk {
+#homepage #speakers li#musk {
   background: url("../images/speaker_elon_musk.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#speakers li#thiel {
+#homepage #speakers li#thiel {
   background: url("../images/speaker_peter_thiel.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#speakers li .content {
+#homepage #speakers li .content {
   font: 2.5em "Freight", serif;
   line-height: 1.5em;
   margin: 0 auto;
@@ -1002,7 +1002,7 @@ footer {
   max-width: 80%;
   padding-top: 100px;
   position: relative; }
-  #speakers li .content:before {
+  #homepage #speakers li .content:before {
     background: url("../images/icon_quote.png") no-repeat;
     background-size: contain;
     content: '';
@@ -1011,98 +1011,136 @@ footer {
     position: absolute;
     top: 0;
     left: 225px; }
-  #speakers li .content .author, #speakers li .content .title {
+  #homepage #speakers li .content .author, #homepage #speakers li .content .title {
     display: block;
     font: 0.4em "Gotham", Georgia, Times, serif;
     text-align: right; }
-  #speakers li .content .author {
+  #homepage #speakers li .content .author {
     font-weight: 700;
     margin: 3em 0 0.5em; }
-    #speakers li .content .author:before {
+    #homepage #speakers li .content .author:before {
       content: '- '; }
 
-#activities li#learn {
+#homepage #activities li#learn {
   background: url("../images/hero_learn_stuff.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#activities li#make {
+#homepage #activities li#make {
   background: url("../images/hero_make_stuff.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#activities li#eat {
+#homepage #activities li#eat {
   background: url("../images/hero_eat_stuff.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#activities li#pitch {
+#homepage #activities li#pitch {
   background: url("../images/hero_pitch_stuff.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#activities li#hear {
+#homepage #activities li#hear {
   background: url("../images/hero_hear_stuff.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#activities li#selfie {
+#homepage #activities li#selfie {
   background: url("../images/hero_selfie.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
 
-#activities li .content {
+#homepage #activities li .content {
   font-size: 2em;
   margin: 0 auto;
   max-width: 80%;
   position: relative;
   text-align: center;
   width: 600px; }
-  #activities li .content .author, #activities li .content .title {
+  #homepage #activities li .content .author, #homepage #activities li .content .title {
     display: block;
     font: 0.4em "Gotham", Georgia, Times, serif;
     text-align: right; }
-  #activities li .content .author {
+  #homepage #activities li .content .author {
     font-weight: 700;
     margin: 3em 0 0.5em; }
-    #activities li .content .author:before {
+    #homepage #activities li .content .author:before {
       content: '- '; }
 
-#testimonials {
+#homepage #testimonials {
   color: #233E75; }
-  #testimonials .grid {
+  #homepage #testimonials .grid {
     margin-top: 2em; }
-  #testimonials img {
+  #homepage #testimonials img {
     width: 100%; }
-  #testimonials p {
+  #homepage #testimonials p {
     margin-top: 0; }
-  #testimonials .container {
+  #homepage #testimonials .container {
     margin-top: 3em;
     margin-bottom: 3em;
     max-width: 90%; }
-    #testimonials .container.header {
+    #homepage #testimonials .container.header {
       font: 200 1.25em "Gotham", Georgia, Times, serif;
       max-width: 80%;
       text-align: center;
       width: 600px; }
-      #testimonials .container.header h3 {
+      #homepage #testimonials .container.header h3 {
         font-size: 2em;
         margin-bottom: .75em; }
 
-#closing {
+#homepage #closing {
   background: url("../images/hero_closing.jpg") no-repeat;
   background-size: cover;
   color: #fff; }
-  #closing .container {
+  #homepage #closing .container {
     font-size: 1.5em;
     max-width: 80%;
     text-align: center; }
-    #closing .container .btn {
+    #homepage #closing .container .btn {
       font-size: .7em;
       margin: 4em auto 0;
       width: 10em; }
-    #closing .container h1 {
+    #homepage #closing .container h1 {
       font-size: 3.5em; }
+
+#application #home {
+  background: url("../images/hero_landing_page.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center; }
+  #application #home header {
+    padding: 2em 3em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden; }
+    #application #home header #logo {
+      float: left; }
+    #application #home header nav {
+      overflow: hidden;
+      text-align: right; }
+      #application #home header nav ul {
+        list-style: none; }
+        #application #home header nav ul li {
+          display: inline-block;
+          padding: 0 1.5em; }
+          #application #home header nav ul li a {
+            color: #fff;
+            text-decoration: none; }
+  #application #home .container {
+    color: #fff;
+    padding-top: 2em;
+    width: 40em; }
+    #application #home .container .btn {
+      margin: 4em auto 0;
+      width: 10em; }
+    #application #home .container h2 {
+      font-size: 2.25em;
+      line-height: 1.5em;
+      padding: .7em 0;
+      text-align: center; }
+    #application #home .container h4 {
+      text-align: center; }
 
 @media screen and (min-width: 800px) {
   .mobile {
