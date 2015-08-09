@@ -1,6 +1,8 @@
 // primary site colors
 $accent: #CB6A79;
+$accent-light: #deadb0;
 $primary: #233E75;
+$primary-light: lighten($primary, 15%);
 
 // monochromatic
 $white: #fff;

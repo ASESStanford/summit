@@ -4,6 +4,10 @@
     background-size: cover; 
     background-position: top center;
 
+    .container {
+      color: $white; 
+    }
+
     header {
       padding: 2em 3em;
       position: absolute; 
@@ -35,25 +39,183 @@
         }
       }
     }
+  }
 
+  #app-tips {
+    background: $primary;
+    color: $white;
+    padding: 2em 0;
     .container {
-      color: $white; 
-      padding-top: 2em;
       width: 40em;
+    }
+    p {
+      font-size: 1em;
+      line-height: 1.75em;
+    }
+    h2 {
+      padding: 0;
+    }
+    h4 {
+      color: $accent-light;
+      margin-top: 1.5em;
+    }
+  }
 
-      .btn {
-        margin: 4em auto 0;
-        width: 10em; 
-      }
-      h2 {
-        font-size: 2.25em; 
-        line-height: 1.5em;
-        padding: .7em 0; 
-        text-align: center;
-      }
+  #process {
+    color: $primary; 
+    .container {
+      padding-top: 0; 
+    }
+    p {
+      font-size: 1em;
+      line-height: 2em;
+    }
+    small {
+      font-size: 1em;
+    }
+    .intro {
+      display: block; 
+      margin: 0 auto;
+      text-align: center; 
       h4 {
-        text-align: center;
+        margin: 0 auto;
       }
+      small {
+        display: block;
+        margin: 3em auto 1em;
+        text-align: left;
+        width: 30em;
+      }
+    }
+    .steps {
+      margin: 3em auto;
+      position: relative; 
+      .step {
+        margin: 0 auto;
+        text-align: center;
+        width: 30em;
+        position: relative;
+
+        &:not(:first-of-type) {
+          padding-top: 3em;
+        }
+        &:not(:last-of-type) {
+          border-bottom: 4px dotted $primary-light;
+        }
+        &:first-child:after {
+          content: '75% proceed';
+          font-weight: 400;
+          position: absolute; 
+          bottom: -10px; 
+          left: -120px;
+          width: 100px;
+        }
+        &:nth-child(2):after {
+          content: '25% proceed';
+          font-weight: 400;
+          position: absolute; 
+          bottom: -10px; 
+          left: -120px;
+          width: 100px;
+        }
+        .info {        
+          background: $white;
+          margin: 3em auto;
+          padding: 2em 0;
+          p {
+            font-size: 1.25em;
+          }
+        }
+        .number {
+          background: $white;
+          border: 4px solid $primary;
+          border-radius: 50%;
+          display: block;
+          font-size: 2em; 
+          font-weight: 700;
+          line-height: 1.9em;
+          margin: 0 auto;
+          height: 2em; 
+          width: 2em;
+          text-align: center;
+        }
+        &:before {
+          content: ''; 
+          background: $primary; 
+          width: 4px; 
+          height: 100%;
+          position: absolute; 
+          top: 0;
+          left: 50%;
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  #details {
+    color: $primary;
+    padding: 3em 0;
+    text-align: center;
+
+    ul#breakdown {
+      margin: 2em auto; 
+      width: 35em;
+
+      li {
+        font-size: 1.25em;
+        font-weight: 400;
+        margin: 1em;
+        line-height: 25px;
+        list-style: none; 
+        padding-bottom: 1em;
+        padding-left: 40px;
+        text-align: left; 
+
+        &.include {
+          background: url('../images/icon_check.png') no-repeat; 
+          background-position: top left;
+        }
+        &.exclude {
+          background: url('../images/icon_x.png') no-repeat; 
+          background-position: top left;
+          color: $accent-light;
+          font-weight: 600;
+        }
+      }
+    }
+    h4 {
+      width: 22em;
+    }
+    .deadline {
+      margin-top: 2em;
+      margin-bottom: 2em;
+
+      &:first-child {
+        border-right: 3.5px solid $primary;
+      }
+      &:last-child {
+        border-left: 3.5px solid $primary;
+      }
+    }
+  }
+
+  .container {
+    padding-top: 2em;
+    width: 80%;
+
+    .btn {
+      margin: 4em auto 0;
+      width: 10em; 
+    }
+    p {
+      font-size: 1.8em;
+    }
+    h2 {
+      font-size: 2.5em; 
+      line-height: 1.5em;
+      padding: .7em 0; 
+      text-align: center;
     }
   }
 }

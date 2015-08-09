@@ -16,6 +16,71 @@
   .desktop {
     display: none; 
   }
+  #application {
+    #app-tips .container {
+      width: 80%;
+    }
+    nav {
+      display: none;
+    }
+    #disclaimer {
+      color: $white; 
+      font-size: .8em;
+      position: absolute;
+      width: 100%; 
+      bottom: 2em; 
+      text-align: center; 
+      padding: 0 10%;
+    }
+    #details {
+      .deadline {
+        &:first-child {
+          border-right: none;
+          border-bottom: 3px solid $primary;
+          padding-bottom: 1em;
+        }
+        &:last-child {
+          border-left: none;
+          padding-top: 1em;
+        }
+      }
+      h4, ul#breakdown {
+        width: auto;
+      }
+      ul#breakdown {
+        padding-left: 0;
+        li {
+          font-size: 1.05em;
+        }
+      }
+    }
+    #process {
+      .steps .step {
+        b {
+          display: block; 
+        }
+        &:first-child:after {
+          content: '75%';
+          font-weight: 400;
+          position: absolute; 
+          bottom: -10px; 
+          left: -40px;
+          width: 20px;
+        }
+        &:nth-child(2):after {
+          content: '25%';
+          font-weight: 400;
+          position: absolute; 
+          bottom: -10px; 
+          left: -40px;
+          width: 20px;
+        }
+      }
+      .steps .step, .intro small {
+        width: 80%;
+      }
+    }
+  }
   footer {
     a .icon {
       margin: 2em 0;
@@ -24,137 +89,139 @@
       margin-right: 1em; 
     }
   }
-  #value-prop section {
-    .container {
-      width: 100%; 
+  #home {
+    #value-prop section {
+      .container {
+        width: 100%; 
+      }
     }
-  }
-  #details section {
-    .container {
-      width: 100%; 
+    #details section {
+      .container {
+        width: 100%; 
+      }
     }
-  }
-  #home section {
-    header {
-      margin-left: 0;
-      overflow: inherit; 
-    }
-    .mobile {
-      position: absolute; 
-      top: 2em; 
-      right: 2em;
-    }
-    nav {
-      display: none;
-      background: rgba(255, 255, 255, 0.95);
-      position: absolute; 
-      top: 5em; 
-      width: 100%;
-      padding-right: 10%;
-      left: 0;
-      z-index: 3;
-      ul li {
-        display: block;
-        text-align: center;
-        padding: 1em 0;
+    #home section {
+      header {
+        margin-left: 0;
+        overflow: inherit; 
+      }
+      .mobile {
+        position: absolute; 
+        top: 2em; 
+        right: 2em;
+      }
+      nav {
+        display: none;
+        background: rgba(255, 255, 255, 0.95);
+        position: absolute; 
+        top: 5em; 
         width: 100%;
-        a {
-          color: $primary;
-        }
-        &:not(:last-of-type) {
-          border-bottom: 1px solid $primary;
-        }
-      }
-    }
-    .container {
-      font-size: .9em;
-      width: 85%;
-      .btn {
-        font-size: 1.5em;
-        margin-top: 1.5em;
-      }
-      h5 {
-        font-size: .75em;
-        line-height: 1.75em;
-        margin: 0 auto;
-        width: 60%;
-        span:before, span:after {
-          width: 30%;
-          top: 25%;
-        }
-      }
-    }
-  }
-  #unique section {
-    .container {
-      width: 80%;
-      h3 {
-        line-height: 1.25em;
-        text-align: center;
-      }
-    }
-  }
-  #testimonials section {
-    .container, .container.header {
-      width: 90%;
-
-      img {
-        display: block; 
-        margin: 1em auto 2em;
-        width: 40%;
-      }
-    }
-  }
-  .slideshow#speakers, .slideshow#activities {
-    li .content {
-      font-size: 1.6em;
-      max-width: 60%;
-      width: auto;
-      &:before {
-        left: 38%;
-      }
-    }
-  }
-  #closing section {
-    .container h1 {
-      font-size: 2em;
-    }
-  }
-  #details section {
-    padding-top: 2em; 
-
-    .container {
-      margin-top: 0;
-
-      .deadline:first-child, .deadline:last-child {
-        border-right: 0px;
-        border-left: 0px;
-      }
-      .deadline, .deadline-detail {
-        position: relative; 
-        padding-bottom: 4em;
-        &:after {
-          content: '';
-          background-color: $primary; 
-          width: 70%; 
-          height: .5em;
-          position: absolute; 
-          bottom: 2em;
-          left: 15%;
-        }
-        &:last-of-type {
-          padding-bottom: 0; 
-          
-          &:after {
-            display: none;
+        padding-right: 10%;
+        left: 0;
+        z-index: 3;
+        ul li {
+          display: block;
+          text-align: center;
+          padding: 1em 0;
+          width: 100%;
+          a {
+            color: $primary;
+          }
+          &:not(:last-of-type) {
+            border-bottom: 1px solid $primary;
           }
         }
       }
-      .deadline-details {
+      .container {
+        font-size: .9em;
+        width: 85%;
+        .btn {
+          font-size: 1.5em;
+          margin-top: 1.5em;
+        }
+        h5 {
+          font-size: .75em;
+          line-height: 1.75em;
+          margin: 0 auto;
+          width: 60%;
+          span:before, span:after {
+            width: 30%;
+            top: 25%;
+          }
+        }
+      }
+    }
+    #unique section {
+      .container {
+        width: 80%;
+        h3 {
+          line-height: 1.25em;
+          text-align: center;
+        }
+      }
+    }
+    #testimonials section {
+      .container, .container.header {
+        width: 90%;
+
+        img {
+          display: block; 
+          margin: 1em auto 2em;
+          width: 40%;
+        }
+      }
+    }
+    .slideshow#speakers, .slideshow#activities {
+      li .content {
+        font-size: 1.6em;
+        max-width: 60%;
+        width: auto;
+        &:before {
+          left: 38%;
+        }
+      }
+    }
+    #closing section {
+      .container h1 {
+        font-size: 2em;
+      }
+    }
+    #details section {
+      padding-top: 2em; 
+
+      .container {
         margin-top: 0;
-        .deadline-detail {
-          padding-top: 2em;
-        } 
+
+        .deadline:first-child, .deadline:last-child {
+          border-right: 0px;
+          border-left: 0px;
+        }
+        .deadline, .deadline-detail {
+          position: relative; 
+          padding-bottom: 4em;
+          &:after {
+            content: '';
+            background-color: $primary; 
+            width: 70%; 
+            height: .5em;
+            position: absolute; 
+            bottom: 2em;
+            left: 15%;
+          }
+          &:last-of-type {
+            padding-bottom: 0; 
+            
+            &:after {
+              display: none;
+            }
+          }
+        }
+        .deadline-details {
+          margin-top: 0;
+          .deadline-detail {
+            padding-top: 2em;
+          } 
+        }
       }
     }
   }

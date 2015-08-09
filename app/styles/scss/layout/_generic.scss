@@ -21,6 +21,12 @@ aside {
   }
 }
 
+.align {
+  &.center {
+    text-align: center;
+  }
+}
+
 section {
   display: table;
   width: 100%;

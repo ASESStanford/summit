@@ -785,6 +785,9 @@ aside {
       line-height: 2em;
       width: 500px; }
 
+.align.center {
+  text-align: center; }
+
 section {
   display: table;
   width: 100%; }
@@ -1108,6 +1111,8 @@ footer {
   background: url("../images/hero_landing_page.jpg") no-repeat;
   background-size: cover;
   background-position: top center; }
+  #application #home .container {
+    color: #fff; }
   #application #home header {
     padding: 2em 3em;
     position: absolute;
@@ -1127,20 +1132,143 @@ footer {
           #application #home header nav ul li a {
             color: #fff;
             text-decoration: none; }
-  #application #home .container {
-    color: #fff;
-    padding-top: 2em;
+
+#application #app-tips {
+  background: #233E75;
+  color: #fff;
+  padding: 2em 0; }
+  #application #app-tips .container {
     width: 40em; }
-    #application #home .container .btn {
-      margin: 4em auto 0;
-      width: 10em; }
-    #application #home .container h2 {
-      font-size: 2.25em;
-      line-height: 1.5em;
-      padding: .7em 0;
-      text-align: center; }
-    #application #home .container h4 {
-      text-align: center; }
+  #application #app-tips p {
+    font-size: 1em;
+    line-height: 1.75em; }
+  #application #app-tips h2 {
+    padding: 0; }
+  #application #app-tips h4 {
+    color: #deadb0;
+    margin-top: 1.5em; }
+
+#application #process {
+  color: #233E75; }
+  #application #process .container {
+    padding-top: 0; }
+  #application #process p {
+    font-size: 1em;
+    line-height: 2em; }
+  #application #process small {
+    font-size: 1em; }
+  #application #process .intro {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+    #application #process .intro h4 {
+      margin: 0 auto; }
+    #application #process .intro small {
+      display: block;
+      margin: 3em auto 1em;
+      text-align: left;
+      width: 30em; }
+  #application #process .steps {
+    margin: 3em auto;
+    position: relative; }
+    #application #process .steps .step {
+      margin: 0 auto;
+      text-align: center;
+      width: 30em;
+      position: relative; }
+      #application #process .steps .step:not(:first-of-type) {
+        padding-top: 3em; }
+      #application #process .steps .step:not(:last-of-type) {
+        border-bottom: 4px dotted #355db0; }
+      #application #process .steps .step:first-child:after {
+        content: '75% proceed';
+        font-weight: 400;
+        position: absolute;
+        bottom: -10px;
+        left: -120px;
+        width: 100px; }
+      #application #process .steps .step:nth-child(2):after {
+        content: '25% proceed';
+        font-weight: 400;
+        position: absolute;
+        bottom: -10px;
+        left: -120px;
+        width: 100px; }
+      #application #process .steps .step .info {
+        background: #fff;
+        margin: 3em auto;
+        padding: 2em 0; }
+        #application #process .steps .step .info p {
+          font-size: 1.25em; }
+      #application #process .steps .step .number {
+        background: #fff;
+        border: 4px solid #233E75;
+        border-radius: 50%;
+        display: block;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1.9em;
+        margin: 0 auto;
+        height: 2em;
+        width: 2em;
+        text-align: center; }
+      #application #process .steps .step:before {
+        content: '';
+        background: #233E75;
+        width: 4px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1; }
+
+#application #details {
+  color: #233E75;
+  padding: 3em 0;
+  text-align: center; }
+  #application #details ul#breakdown {
+    margin: 2em auto;
+    width: 35em; }
+    #application #details ul#breakdown li {
+      font-size: 1.25em;
+      font-weight: 400;
+      margin: 1em;
+      line-height: 25px;
+      list-style: none;
+      padding-bottom: 1em;
+      padding-left: 40px;
+      text-align: left; }
+      #application #details ul#breakdown li.include {
+        background: url("../images/icon_check.png") no-repeat;
+        background-position: top left; }
+      #application #details ul#breakdown li.exclude {
+        background: url("../images/icon_x.png") no-repeat;
+        background-position: top left;
+        color: #deadb0;
+        font-weight: 600; }
+  #application #details h4 {
+    width: 22em; }
+  #application #details .deadline {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    #application #details .deadline:first-child {
+      border-right: 3.5px solid #233E75; }
+    #application #details .deadline:last-child {
+      border-left: 3.5px solid #233E75; }
+
+#application .container {
+  padding-top: 2em;
+  width: 80%; }
+  #application .container .btn {
+    margin: 4em auto 0;
+    width: 10em; }
+  #application .container p {
+    font-size: 1.8em; }
+  #application .container h2 {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    padding: .7em 0;
+    text-align: center; }
 
 @media screen and (min-width: 800px) {
   .mobile {
@@ -1155,22 +1283,65 @@ footer {
     display: block; }
   .desktop {
     display: none; }
+  #application #app-tips .container {
+    width: 80%; }
+  #application nav {
+    display: none; }
+  #application #disclaimer {
+    color: #fff;
+    font-size: .8em;
+    position: absolute;
+    width: 100%;
+    bottom: 2em;
+    text-align: center;
+    padding: 0 10%; }
+  #application #details .deadline:first-child {
+    border-right: none;
+    border-bottom: 3px solid #233E75;
+    padding-bottom: 1em; }
+  #application #details .deadline:last-child {
+    border-left: none;
+    padding-top: 1em; }
+  #application #details h4, #application #details ul#breakdown {
+    width: auto; }
+  #application #details ul#breakdown {
+    padding-left: 0; }
+    #application #details ul#breakdown li {
+      font-size: 1.05em; }
+  #application #process .steps .step b {
+    display: block; }
+  #application #process .steps .step:first-child:after {
+    content: '75%';
+    font-weight: 400;
+    position: absolute;
+    bottom: -10px;
+    left: -40px;
+    width: 20px; }
+  #application #process .steps .step:nth-child(2):after {
+    content: '25%';
+    font-weight: 400;
+    position: absolute;
+    bottom: -10px;
+    left: -40px;
+    width: 20px; }
+  #application #process .steps .step, #application #process .intro small {
+    width: 80%; }
   footer a .icon {
     margin: 2em 0; }
   footer a:not(:last-of-type) {
     margin-right: 1em; }
-  #value-prop section .container {
+  #home #value-prop section .container {
     width: 100%; }
-  #details section .container {
+  #home #details section .container {
     width: 100%; }
-  #home section header {
+  #home #home section header {
     margin-left: 0;
     overflow: inherit; }
-  #home section .mobile {
+  #home #home section .mobile {
     position: absolute;
     top: 2em;
     right: 2em; }
-  #home section nav {
+  #home #home section nav {
     display: none;
     background: rgba(255, 255, 255, 0.95);
     position: absolute;
@@ -1179,59 +1350,59 @@ footer {
     padding-right: 10%;
     left: 0;
     z-index: 3; }
-    #home section nav ul li {
+    #home #home section nav ul li {
       display: block;
       text-align: center;
       padding: 1em 0;
       width: 100%; }
-      #home section nav ul li a {
+      #home #home section nav ul li a {
         color: #233E75; }
-      #home section nav ul li:not(:last-of-type) {
+      #home #home section nav ul li:not(:last-of-type) {
         border-bottom: 1px solid #233E75; }
-  #home section .container {
+  #home #home section .container {
     font-size: .9em;
     width: 85%; }
-    #home section .container .btn {
+    #home #home section .container .btn {
       font-size: 1.5em;
       margin-top: 1.5em; }
-    #home section .container h5 {
+    #home #home section .container h5 {
       font-size: .75em;
       line-height: 1.75em;
       margin: 0 auto;
       width: 60%; }
-      #home section .container h5 span:before, #home section .container h5 span:after {
+      #home #home section .container h5 span:before, #home #home section .container h5 span:after {
         width: 30%;
         top: 25%; }
-  #unique section .container {
+  #home #unique section .container {
     width: 80%; }
-    #unique section .container h3 {
+    #home #unique section .container h3 {
       line-height: 1.25em;
       text-align: center; }
-  #testimonials section .container, #testimonials section .container.header {
+  #home #testimonials section .container, #home #testimonials section .container.header {
     width: 90%; }
-    #testimonials section .container img, #testimonials section .container.header img {
+    #home #testimonials section .container img, #home #testimonials section .container.header img {
       display: block;
       margin: 1em auto 2em;
       width: 40%; }
-  .slideshow#speakers li .content, .slideshow#activities li .content {
+  #home .slideshow#speakers li .content, #home .slideshow#activities li .content {
     font-size: 1.6em;
     max-width: 60%;
     width: auto; }
-    .slideshow#speakers li .content:before, .slideshow#activities li .content:before {
+    #home .slideshow#speakers li .content:before, #home .slideshow#activities li .content:before {
       left: 38%; }
-  #closing section .container h1 {
+  #home #closing section .container h1 {
     font-size: 2em; }
-  #details section {
+  #home #details section {
     padding-top: 2em; }
-    #details section .container {
+    #home #details section .container {
       margin-top: 0; }
-      #details section .container .deadline:first-child, #details section .container .deadline:last-child {
+      #home #details section .container .deadline:first-child, #home #details section .container .deadline:last-child {
         border-right: 0px;
         border-left: 0px; }
-      #details section .container .deadline, #details section .container .deadline-detail {
+      #home #details section .container .deadline, #home #details section .container .deadline-detail {
         position: relative;
         padding-bottom: 4em; }
-        #details section .container .deadline:after, #details section .container .deadline-detail:after {
+        #home #details section .container .deadline:after, #home #details section .container .deadline-detail:after {
           content: '';
           background-color: #233E75;
           width: 70%;
@@ -1239,11 +1410,11 @@ footer {
           position: absolute;
           bottom: 2em;
           left: 15%; }
-        #details section .container .deadline:last-of-type, #details section .container .deadline-detail:last-of-type {
+        #home #details section .container .deadline:last-of-type, #home #details section .container .deadline-detail:last-of-type {
           padding-bottom: 0; }
-          #details section .container .deadline:last-of-type:after, #details section .container .deadline-detail:last-of-type:after {
+          #home #details section .container .deadline:last-of-type:after, #home #details section .container .deadline-detail:last-of-type:after {
             display: none; }
-      #details section .container .deadline-details {
+      #home #details section .container .deadline-details {
         margin-top: 0; }
-        #details section .container .deadline-details .deadline-detail {
+        #home #details section .container .deadline-details .deadline-detail {
           padding-top: 2em; } }
