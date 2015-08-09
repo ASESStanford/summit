@@ -260,6 +260,20 @@
         background: url('../images/hero_eat_stuff.jpg') no-repeat;
         background-size: cover;
         background-position: center center;
+        h2 {
+          position: relative; 
+          &:after {
+            background: url('../images/drink_text_cross_out_icon.png') no-repeat; 
+            background-size: contain; 
+            background-position: center center;
+            content: ''; 
+            position: absolute; 
+            top: -1.25em; 
+            left: -2.25em; 
+            width: 100%; 
+            height: 2em;
+          }
+        }
       }
       &#pitch {
         background: url('../images/hero_pitch_stuff.jpg') no-repeat;

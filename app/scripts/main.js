@@ -42,7 +42,7 @@ $(document).ready(function($) {
   });
 
   $('header a#mobile-nav-toggle').on('click', function() {
-    var nav = $(this).siblings('nav')
+    var nav = $(this).siblings('nav');
     nav.css('display', nav.css('display') == 'none' ? 'inline-block' : 'none'); 
   }); 
   
