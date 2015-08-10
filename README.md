@@ -1,8 +1,3 @@
 # summit
 ## Getting Bootstrapped
-
-## Stack
-
-## Structure
-
-## Mockups
+Clone the repo, install dependencies (`sudo npm install`) and gulp, and run `gulp`. 
