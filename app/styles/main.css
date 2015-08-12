@@ -396,7 +396,9 @@ th {
   font-style: normal; }
 
 body {
-  font: 200 15px "Gotham", Georgia, Times, serif; }
+  font: 200 15px "Gotham", Georgia, Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5 {
   font-weight: 700;
@@ -842,9 +844,17 @@ section {
   background-position: center center; }
 
 header a#logo {
+  background: url("../images/logo.png") no-repeat;
+  background-size: contain;
   color: #fff;
   font-size: 2em;
-  text-decoration: none; }
+  height: 3em;
+  width: 100%;
+  text-decoration: none;
+  text-indent: -9999999px; }
+
+header nav a {
+  line-height: 3em; }
 
 footer {
   color: #fff;

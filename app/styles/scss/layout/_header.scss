@@ -1,7 +1,17 @@
 header {
   a#logo {
+    background: url('../images/logo.png') no-repeat; 
+    background-size: contain; 
     color: $white;
     font-size: 2em;
+    height: 3em;
+    width: 100%;
     text-decoration: none; 
+    text-indent: -9999999px;
+  }
+  nav {
+    a {
+      line-height: 3em;
+    }
   }
 }
