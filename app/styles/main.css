@@ -396,7 +396,9 @@ th {
   font-style: normal; }
 
 body {
-  font: 200 15px "Gotham", Georgia, Times, serif; }
+  font: 200 15px "Gotham", Georgia, Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5 {
   font-weight: 700;
@@ -841,6 +843,19 @@ section {
   background-size: cover;
   background-position: center center; }
 
+header a#logo {
+  background: url("../images/logo.png") no-repeat;
+  background-size: contain;
+  color: #fff;
+  font-size: 2em;
+  height: 3em;
+  width: 100%;
+  text-decoration: none;
+  text-indent: -9999999px; }
+
+header nav a {
+  line-height: 3em; }
+
 footer {
   color: #fff;
   text-align: center;
@@ -1038,6 +1053,18 @@ footer {
   background: url("../images/hero_eat_stuff.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
+  #homepage #activities li#eat h2 {
+    position: relative; }
+    #homepage #activities li#eat h2:after {
+      background: url("../images/drink_text_cross_out_icon.png") no-repeat;
+      background-size: contain;
+      background-position: center center;
+      content: '';
+      position: absolute;
+      top: -1.25em;
+      left: -2.25em;
+      width: 100%;
+      height: 2em; }
 
 #homepage #activities li#pitch {
   background: url("../images/hero_pitch_stuff.jpg") no-repeat;
@@ -1228,7 +1255,8 @@ footer {
   text-align: center; }
   #application #details ul#breakdown {
     margin: 2em auto;
-    width: 35em; }
+    width: 35em;
+    max-width: 80%; }
     #application #details ul#breakdown li {
       font-size: 1.25em;
       font-weight: 400;
@@ -1247,7 +1275,7 @@ footer {
         color: #deadb0;
         font-weight: 600; }
   #application #details h4 {
-    width: 22em; }
+    width: 95%; }
   #application #details .deadline {
     margin-top: 2em;
     margin-bottom: 2em; }
@@ -1270,7 +1298,11 @@ footer {
     padding: .7em 0;
     text-align: center; }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 600px) {
+  #homepage #activities li#eat h2:after {
+    left: -.5em; } }
+
+@media screen and (min-width: 700px) {
   .mobile {
     display: none; }
   .desktop {
@@ -1278,7 +1310,7 @@ footer {
   nav {
     display: block; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .mobile {
     display: block; }
   .desktop {
@@ -1326,22 +1358,22 @@ footer {
     width: 20px; }
   #application #process .steps .step, #application #process .intro small {
     width: 80%; }
+  header #mobile-nav-toggle {
+    position: absolute;
+    top: 2em;
+    right: 2em; }
   footer a .icon {
     margin: 2em 0; }
   footer a:not(:last-of-type) {
     margin-right: 1em; }
-  #home #value-prop section .container {
+  #homepage #value-prop section .container {
     width: 100%; }
-  #home #details section .container {
+  #homepage #details section .container {
     width: 100%; }
-  #home #home section header {
+  #homepage #home section header {
     margin-left: 0;
     overflow: inherit; }
-  #home #home section .mobile {
-    position: absolute;
-    top: 2em;
-    right: 2em; }
-  #home #home section nav {
+  #homepage #home section nav {
     display: none;
     background: rgba(255, 255, 255, 0.95);
     position: absolute;
@@ -1350,59 +1382,59 @@ footer {
     padding-right: 10%;
     left: 0;
     z-index: 3; }
-    #home #home section nav ul li {
+    #homepage #home section nav ul li {
       display: block;
       text-align: center;
       padding: 1em 0;
       width: 100%; }
-      #home #home section nav ul li a {
+      #homepage #home section nav ul li a {
         color: #233E75; }
-      #home #home section nav ul li:not(:last-of-type) {
+      #homepage #home section nav ul li:not(:last-of-type) {
         border-bottom: 1px solid #233E75; }
-  #home #home section .container {
+  #homepage #home section .container {
     font-size: .9em;
     width: 85%; }
-    #home #home section .container .btn {
+    #homepage #home section .container .btn {
       font-size: 1.5em;
       margin-top: 1.5em; }
-    #home #home section .container h5 {
+    #homepage #home section .container h5 {
       font-size: .75em;
       line-height: 1.75em;
       margin: 0 auto;
       width: 60%; }
-      #home #home section .container h5 span:before, #home #home section .container h5 span:after {
+      #homepage #home section .container h5 span:before, #homepage #home section .container h5 span:after {
         width: 30%;
         top: 25%; }
-  #home #unique section .container {
+  #homepage #unique section .container {
     width: 80%; }
-    #home #unique section .container h3 {
+    #homepage #unique section .container h3 {
       line-height: 1.25em;
       text-align: center; }
-  #home #testimonials section .container, #home #testimonials section .container.header {
+  #homepage #testimonials section .container, #homepage #testimonials section .container.header {
     width: 90%; }
-    #home #testimonials section .container img, #home #testimonials section .container.header img {
+    #homepage #testimonials section .container img, #homepage #testimonials section .container.header img {
       display: block;
       margin: 1em auto 2em;
       width: 40%; }
-  #home .slideshow#speakers li .content, #home .slideshow#activities li .content {
+  #homepage .slideshow#speakers li .content, #homepage .slideshow#activities li .content {
     font-size: 1.6em;
     max-width: 60%;
     width: auto; }
-    #home .slideshow#speakers li .content:before, #home .slideshow#activities li .content:before {
+    #homepage .slideshow#speakers li .content:before, #homepage .slideshow#activities li .content:before {
       left: 38%; }
-  #home #closing section .container h1 {
+  #homepage #closing section .container h1 {
     font-size: 2em; }
-  #home #details section {
+  #homepage #details section {
     padding-top: 2em; }
-    #home #details section .container {
+    #homepage #details section .container {
       margin-top: 0; }
-      #home #details section .container .deadline:first-child, #home #details section .container .deadline:last-child {
+      #homepage #details section .container .deadline:first-child, #homepage #details section .container .deadline:last-child {
         border-right: 0px;
         border-left: 0px; }
-      #home #details section .container .deadline, #home #details section .container .deadline-detail {
+      #homepage #details section .container .deadline, #homepage #details section .container .deadline-detail {
         position: relative;
         padding-bottom: 4em; }
-        #home #details section .container .deadline:after, #home #details section .container .deadline-detail:after {
+        #homepage #details section .container .deadline:after, #homepage #details section .container .deadline-detail:after {
           content: '';
           background-color: #233E75;
           width: 70%;
@@ -1410,11 +1442,11 @@ footer {
           position: absolute;
           bottom: 2em;
           left: 15%; }
-        #home #details section .container .deadline:last-of-type, #home #details section .container .deadline-detail:last-of-type {
+        #homepage #details section .container .deadline:last-of-type, #homepage #details section .container .deadline-detail:last-of-type {
           padding-bottom: 0; }
-          #home #details section .container .deadline:last-of-type:after, #home #details section .container .deadline-detail:last-of-type:after {
+          #homepage #details section .container .deadline:last-of-type:after, #homepage #details section .container .deadline-detail:last-of-type:after {
             display: none; }
-      #home #details section .container .deadline-details {
+      #homepage #details section .container .deadline-details {
         margin-top: 0; }
-        #home #details section .container .deadline-details .deadline-detail {
+        #homepage #details section .container .deadline-details .deadline-detail {
           padding-top: 2em; } }

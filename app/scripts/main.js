@@ -18,6 +18,19 @@ var makeSlideshow = function(selector, width) {
 
 $(document).ready(function($) {
 
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+  
   var width = $(document).width();
 
   makeSlideshow($('#speakers'), width);
@@ -42,7 +55,7 @@ $(document).ready(function($) {
   });
 
   $('header a#mobile-nav-toggle').on('click', function() {
-    var nav = $(this).siblings('nav')
+    var nav = $(this).siblings('nav');
     nav.css('display', nav.css('display') == 'none' ? 'inline-block' : 'none'); 
   }); 
   

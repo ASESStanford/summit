@@ -161,6 +161,7 @@
     ul#breakdown {
       margin: 2em auto; 
       width: 35em;
+      max-width: 80%;
 
       li {
         font-size: 1.25em;
@@ -185,7 +186,7 @@
       }
     }
     h4 {
-      width: 22em;
+      width: 95%;
     }
     .deadline {
       margin-top: 2em;
