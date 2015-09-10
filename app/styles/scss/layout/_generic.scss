@@ -99,3 +99,26 @@ section {
     background-position: center center;
   }
 }
+
+.position {
+  position: absolute;
+
+  &.lower.right {
+    bottom: 1.5em; 
+    right: 1.5em;
+  }
+}
+
+.packet-link {
+  background: rgba(0,0,0,0.25) url('../images/icon_new_tab.png') no-repeat;
+  background-position: right center;
+  background-size: 1em;
+  color: $accent;
+  font-size: 14px;
+  border-right: .75em solid rgba(0,0,0,0);
+  padding: .5em 1.75em .35em .75em;
+  text-decoration: none;
+  &:hover {
+    background-color: rgba(0,0,0,0.45);
+  }
+}

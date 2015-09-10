@@ -360,6 +360,12 @@ th {
 /*Gotham Font Stylesheet*/
 @font-face {
   font-family: 'Gotham';
+  src: url("../fonts/Gotham-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Black.otf") format("opentype"), url("../fonts/Gotham-Black.woff") format("woff"), url("../fonts/Gotham-Black.ttf") format("truetype"), url("../fonts/Gotham-Black.svg#Gotham-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham';
   src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.otf") format("opentype"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
   font-weight: 700;
   font-style: normal; }
@@ -396,28 +402,39 @@ th {
   font-style: normal; }
 
 body {
-  font: 200 15px "Gotham", Georgia, Times, serif;
+  font: 200 16px "Gotham", Georgia, Times, serif;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.book {
+  font-weight: 400; }
+
+.med {
+  font-weight: 600; }
+
 h1, h2, h3, h4, h5 {
-  font-weight: 700;
+  font-weight: 900;
   margin: 0; }
   h1 .normal, h2 .normal, h3 .normal, h4 .normal, h5 .normal {
     font-weight: normal; }
 
 h1 {
-  font-size: 5em; }
+  font-size: 2.5rem;
+  line-height: 1.34em; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  line-height: 1.34em; }
 
 h3 {
   font-size: 2.75em;
-  letter-spacing: -1.5px; }
+  line-height: 1.33em;
+  letter-spacing: -1.25px; }
 
 h4 {
-  font-size: 2em; }
+  font-size: 2em;
+  line-height: 1.25em; }
 
 h5 {
   font-size: 1.5em; }
@@ -843,6 +860,24 @@ section {
   background-size: cover;
   background-position: center center; }
 
+.position {
+  position: absolute; }
+  .position.lower.right {
+    bottom: 1.5em;
+    right: 1.5em; }
+
+.packet-link {
+  background: rgba(0, 0, 0, 0.25) url("../images/icon_new_tab.png") no-repeat;
+  background-position: right center;
+  background-size: 1em;
+  color: #CB6A79;
+  font-size: 14px;
+  border-right: 0.75em solid transparent;
+  padding: 0.5em 1.75em 0.35em 0.75em;
+  text-decoration: none; }
+  .packet-link:hover {
+    background-color: rgba(0, 0, 0, 0.45); }
+
 header a#logo {
   background: url("../images/logo.png") no-repeat;
   background-size: contain;
@@ -1122,7 +1157,8 @@ footer {
 #homepage #closing {
   background: url("../images/hero_closing.jpg") no-repeat;
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
   #homepage #closing .container {
     font-size: 1.5em;
     max-width: 80%;
@@ -1315,6 +1351,8 @@ footer {
     display: block; }
   .desktop {
     display: none; }
+  header a#logo {
+    width: 70%; }
   #application #app-tips .container {
     width: 80%; }
   #application nav {

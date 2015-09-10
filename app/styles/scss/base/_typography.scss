@@ -3,14 +3,22 @@ $body-font: 'Gotham', Georgia, Times, serif;
 $emphasis-font: 'Freight', serif; 
 
 body {
-  font: 200 15px $body-font; 
-  // font-weight: 400;
+  font: 200 16px $body-font;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.book {
+  font-weight: 400;
+}
+
+.med {
+  font-weight: 600;
+}
+
 h1, h2, h3, h4, h5 {
-  font-weight: 700; 
+  font-weight: 900; 
   margin: 0; 
 
   .normal {
@@ -19,17 +27,21 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 2.5rem;
+  line-height: 1.34em;
 }
 h2 {
   font-size: 3em;
+  line-height: 1.34em; 
 }
 h3 {
   font-size: 2.75em;
-  letter-spacing: -1.5px;
+  line-height: 1.33em;
+  letter-spacing: -1.25px;
 }
 h4 {
   font-size: 2em;
+  line-height: 1.25em;
 }
 h5 {
   font-size: 1.5em;
